@@ -1,0 +1,35 @@
+/* HELPERS - Mixins, variables, classes and anything else to help.
+========================================================================== */
+
+@import 'helpers/_variables.scss';
+@import 'helpers/_mixins.scss';
+@import 'helpers/_helpers.scss';
+
+
+/* BASE - Basic stuff for the project.
+========================================================================== */
+
+@import 'base/_reset.scss';
+@import 'base/_typography.scss';
+
+
+/* VENDORS - Third party files.
+========================================================================== */ 
+
+@import "vendors/_bootstrap.min.scss";
+@import "vendors/_slick.scss";
+@import "vendors/_slick-theme.scss";
+
+/* COMPONENTS - Smaller components, like buttons and stuff.
+========================================================================== */ 
+
+@import "components/_buttons.scss";
+
+/* MODULES - All pieces that make the website.
+========================================================================== */ 
+
+@import "modules/_header.scss";
+@import "modules/_hero.scss";
+@import "modules/_cards.scss";
+
+

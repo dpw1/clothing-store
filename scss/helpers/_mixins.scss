@@ -1,0 +1,98 @@
+@mixin font($ffamily, $fsize, $color, $fw) {
+    font-family: $ffamily;
+    font-size: $fsize;
+    color: $color;
+    font-weight: $fw;
+}
+
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+    @font-face {
+        font-family: $font-family;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), //url('#{$file-path}.woff') format('woff'),
+        url('#{$file-path}.otf') format('truetype'),
+        url('#{$file-path}.svg##{$font-family}') format('svg');
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
+}
+
+
+/* BREAKPOINTS - Bootstrap's in-between breakpoints.
+========================================================================== */
+
+@mixin breakpoint($point) {
+    @if ($point==lg) {
+        @media (min-width: 1200px) {
+            @content
+        }
+    }
+    @else if ($point==md) {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content
+        }
+    }
+    @else if ($point==sm) {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content
+        }
+    }
+    @else if ($point==xs) {
+        @media (max-width: 767px) and (min-width: 641px) {
+            @content
+        }
+    }
+    @else if ($point==xxs) {
+        @media (max-width: 640px) and (min-width: 481px) {
+            @content
+        }
+    }
+    @else if ($point==xxxs) {
+        @media (max-width: 480px) {
+            @content
+        }
+    }
+    @else if ($point==xs-all) {
+        @media (max-width: 767px) {
+            @content
+        }
+    }
+}
+
+
+/* BREAKPOINTS - Max size bootstrap's breakpoints. Applies rules for 
+that value and below.
+========================================================================== */
+
+@mixin max-breakpoint($point) {
+    @if ($point==lg) {
+        @media (max-width: 1200px) {
+            @content
+        }
+    }
+    @else if ($point==md) {
+        @media (max-width: 992px) {
+            @content
+        }
+    }
+    @else if ($point==sm) {
+        @media (max-width: 768px) {
+            @content
+        }
+    }
+    @else if ($point==xs) {
+        @media (max-width: 767px) {
+            @content
+        }
+    }
+    @else if ($point==xxs) {
+        @media (max-width: 640px) {
+            @content
+        }
+    }
+    @else if ($point==xxxs) {
+        @media (max-width: 480px) {
+            @content
+        }
+    }
+}

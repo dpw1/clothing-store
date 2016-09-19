@@ -1,0 +1,43 @@
+* {
+  border-box: box-sizing;
+}
+
+.cards_item {
+  height: 220px;
+  width: 25%;
+  display: inline-block;
+  float: left;
+  border: 1px solid yellow;
+  background: lightblue;
+}
+
+.cards_item--big {
+  background: green;
+  height: 440px;
+}
+
+.--right {
+  float: right;
+}
+
+@media (max-width: 992px) {
+  .cards_item {
+    width: 50%;
+    height: 220px;
+  }
+  .cards_item--big {
+    height: 440px;
+  }
+}
+
+/* Mobile and tablet  */
+@media (max-width: 768px) {
+  .cards_item {
+    width: 100%;
+    height: 220px;
+  }
+  .cards_item--big {
+    height: 286px;
+    background: blue;
+  }
+}
