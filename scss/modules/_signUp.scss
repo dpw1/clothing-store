@@ -1,0 +1,57 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+$height: 54px;
+$mobile_height: 60px;
+
+/* MODIFIERS - Classes to modify this specific's module appearance.
+========================================================================== */
+
+.signUp {}
+
+.signUp_form {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.signUp_form_wrapper {
+    > input[type="text"] {
+        padding-left: 20px;
+        width: 475px;
+        max-width: 475px;
+        height: $height;
+        line-height: $height;
+        border: 1px solid gray;
+        float: left;
+    }
+    > input[type="submit"] {
+        line-height: $height;
+        width: 95px;
+        float: right;
+        background: orange;
+    }
+}
+
+
+/* BREAKPOINTS - Specific layout changes for responsiveness.
+========================================================================== */
+
+@include max-breakpoint(xxs) {
+    .signUp_form {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    .signUp_form_wrapper {
+        > input[type="text"] {
+            width: 75%;
+            height: $mobile_height;
+            line-height: $mobile_height;
+        }
+        > input[type="submit"] {
+            height: $mobile_height;
+            line-height: $mobile_height;
+            width: 25%;
+            background: lightblue;
+        }
+    }
+}

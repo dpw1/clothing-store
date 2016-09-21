@@ -14,3 +14,12 @@ html,
 body {
     height: 100%;
 }
+
+/* SPECIFICS - Resets for this project only.
+========================================================================== */
+
+input[type="submit"]{
+    border: none;
+    background: none;
+    
+}

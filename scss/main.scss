@@ -17,6 +17,7 @@
 ========================================================================== */ 
 
 @import "vendors/_bootstrap.min.scss";
+//@import "vendors/bootstrap.min.teste.scss";
 @import "vendors/_slick.scss";
 @import "vendors/_slick-theme.scss";
 
@@ -31,5 +32,7 @@
 @import "modules/_header.scss";
 @import "modules/_hero.scss";
 @import "modules/_cards.scss";
+@import "modules/_title.scss";
+@import "modules/_signUp.scss";
 
 

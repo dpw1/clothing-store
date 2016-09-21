@@ -1,0 +1,12 @@
+.title {
+    padding: 60px 0;
+    > * {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    > .title_title {
+        text-transform: uppercase;
+    }
+    > .title_subtitle {}
+}
