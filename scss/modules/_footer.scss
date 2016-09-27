@@ -1,0 +1,75 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+
+
+/* STYLE - General styling for this module.
+========================================================================== */
+
+.footer{
+    
+}
+
+.footer_content{
+    float: left;
+    display: inline-block;
+}
+
+.footer_icon_block{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #606060;
+    display: inline-block;
+    margin-right: 14px;
+    margin-top: 23px;
+    
+    i{
+        margin: 7px 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* MODIFIERS - Classes to modify this specific's module appearance.
+========================================================================== */
+
+
+
+/* BREAKPOINTS - Specific layout changes for responsiveness.
+========================================================================== */
+
+@include max-breakpoint(xs) {
+    .footer_content{
+        &:last-of-type{
+
+        }
+        margin-bottom: 20px;
+    }
+    
+    .--footer_last{
+        background: yellow;
+    }
+    
+    .footer_icon_block{
+       
+    }
+}
+
+@include max-breakpoint(xxxs) {
+    .footer_content{
+        text-align: center;
+//        width: 214% !important;
+
+//        background: lightblue;
+    }
+    
+    .footer_icon_block{
+       
+    }
+}

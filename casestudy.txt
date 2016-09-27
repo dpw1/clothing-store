@@ -1,0 +1,9 @@
+[talk about the analysis on best way to approach the project from a responsive perspective. Say how you want to keep a pleasent experience from a very small device, 320 px width, to a large one.]
+
+--
+
+- By breaking down the multiple pages onto little pieces I was able to speed up the proccess a lot. Anyhow, I was doing the HTML + CSS for every little piece. I found out it wasn't as efficient as I would like, so I am sticking with doing the entire HTML for all the pages and then proceed with the CSS.
+
+- Doing the entire HTML first feels like I'm doing something wrong or not being productive. So I'm back coding HTML + CSS for every little piece, so I can move to the next ones in peace knowing it's 100% ready.
+
+- Working with a responsive table has been an interesting challenge. I thought I wouldn't make one from scratch as it would @slow down my efficiency@, so I went to codepen.io to find good inspirations. 

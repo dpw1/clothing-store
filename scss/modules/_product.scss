@@ -1,0 +1,42 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+
+/* STYLE - General styling for this module.
+========================================================================== */
+
+.product {
+    * {
+        text-align: center;
+    }
+}
+
+.product_image {
+    width: 206px;
+    height: 254px;
+    margin-bottom: 34px;
+}
+
+.product_title {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.product_subtitle {
+    display: block;
+    text-align: center;
+}
+
+
+/* MODIFIERS - Classes to modify this specific's module appearance.
+========================================================================== */
+
+
+/* BREAKPOINTS - Specific layout changes for responsiveness.
+========================================================================== */
+
+@include max-breakpoint(md) {
+    .product_subtitle {
+        margin-bottom: 20px;
+    }
+}

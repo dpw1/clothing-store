@@ -1,0 +1,36 @@
+.miniSlider {
+    width: 100%;
+    padding: $section_distance_small 0;
+}
+
+.miniSlider_content {
+    position: relative;
+    background: gray;
+    height: 118px;
+    .miniSlider_left,
+    .miniSlider_right {
+        position: relative;
+        background: transparent;
+        height: 118px;
+        line-height: 118px;
+        width: 39px;
+
+        text-align: center;
+    }
+    .miniSlider_left {
+        float: left;
+        left: 0;
+    }
+    .miniSlider_right {
+        float: right;
+        right: 0;
+    }
+    &:before,
+    &:after {
+        display: table;
+        content: '';
+    }
+    &:after {
+        clear: both;
+    }
+}

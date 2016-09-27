@@ -14,6 +14,7 @@
     width: 100%;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 
 .hero_title,
@@ -22,43 +23,57 @@
     width: 90%;
     margin: 0 auto;
 }
+.hero_title{
+    text-transform: uppercase;
+    font-size: $font_size_xlg;
+    color: $text_color_light;
+    font-weight: $font_normal;
+}
 
 .hero_subtitle {
     text-align: center;
+    font-size: $font_size_md;
+    color: $text_color_dark;
+    font-weight: $font_normal;
+    font-style: italic;
+    margin-bottom: 20px;
 }
 
 .hero_btn {
     margin: 0 auto;
 }
 
-.hero_slider {
-    position: relative;
+.hero_slider_left,
+.hero_slider_right {
+    position: absolute;
+    background: transparent;
+    height: 118px;
+    line-height: 118px;
+    width: 39px;
+    background: transparent;
+    text-align: center;
+    display: block;
     top: 50%;
     transform: translateY(-50%);
-    .hero_slider_left,
-    .hero_slider_right {
-        position: relative;
-        background: transparent;
-        height: 118px;
-        line-height: 118px;
-        width: 39px;
-        background: transparent;
-        text-align: center;
-    }
-    .hero_slider_left {
-        float: left;
-    }
-    .hero_slider_right {
-        float: right;
-    }
-    &:before,
-    &:after {
-        display: table;
-        content: '';
-    }
-    &:after {
-        clear: both;
-    }
+    z-index: 3;
+}
+
+.hero_slider_left {
+    left: 0;
+}
+
+.hero_slider_right {
+    right: 0;
+}
+
+&:before,
+&:after {
+    display: table;
+    content: '';
+}
+
+&:after {
+    clear: both;
 }
 
 .hero_slider_paginator {
@@ -68,20 +83,27 @@
     transform: translateX(-50%);
     margin: 0 auto;
     text-align: center;
-    > .hero_paginator_btn {
+    .hero_paginator_btn {
         display: inline-block;
-        text-indent: -99999px;
+        text-indent: -9999px;
         width: 15px;
         height: 15px;
         margin: 0 auto;
         margin-right: 10px;
+        color: transparent;
         border: 1px solid #fff;
-        transition: all 0.5s ease;
+        transition: background 0.5s ease;
         &:hover {
             background: #fff;
+            color: transparent !important;
         }
-        &:last-child{
+        &:last-child {
             margin-right: 0;
         }
+
+    }
+    
+    a{
+
     }
 }

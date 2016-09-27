@@ -7,7 +7,9 @@ $mobile_height: 60px;
 /* MODIFIERS - Classes to modify this specific's module appearance.
 ========================================================================== */
 
-.signUp {}
+.signUp {
+    padding: $section_distance 0;
+}
 
 .signUp_form {
     max-width: 570px;

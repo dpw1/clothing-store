@@ -1,8 +1,7 @@
-@mixin font($ffamily, $fsize, $color, $fw) {
-    font-family: $ffamily;
-    font-size: $fsize;
-    color: $color;
-    font-weight: $fw;
+@mixin font($font_size, $font_color, $font_weight) {
+    font-size: $font_size;
+    color: $font_color;
+    font-weight: $font_weight;
 }
 
 @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
@@ -16,6 +15,7 @@
         font-style: $font-style;
     }
 }
+
 
 
 /* BREAKPOINTS 1 - Bootstrap's in-between breakpoints.

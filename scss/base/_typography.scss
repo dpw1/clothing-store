@@ -1,4 +1,32 @@
-body{
-    font-family: 'Lato', sans-serif;
-    font-size: 900px;
+/* VARIABLES - Variables to control the fonts used throught the project.
+========================================================================== */
+
+$lato_normal: 'Lato',sans-serif;
+
+
+$font_size_xxs: 12px;
+$font_size_xs: 14px;
+$font_size_sm: 18px;
+$font_size_md: 24px;
+$font_size_lg: 36px;
+$font_size_xlg: 68px;
+$font_size_xxlg: 72px;
+
+
+$font_light: 300;
+$font_normal: 400;
+$font_bold: 700;
+
+
+
+body {
+    font-family: 'Lato', sans-serif !important;
+
+}
+
+@include max-breakpoint(md){
+    html{
+        
+
+    }
 }

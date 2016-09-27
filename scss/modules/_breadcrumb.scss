@@ -1,0 +1,40 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+$items_distance_horizontal: 15px;
+$items_distance_vertical: 10px;
+/* STYLE - General styling for this module.
+========================================================================== */
+
+.breadcumb {
+    width: 100%;
+}
+
+.breadcrumb_item {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: $items_distance_vertical;
+    a {
+        &:after {
+            display: inline-block;
+            margin: 0 $items_distance_horizontal;
+            content: '/';
+        }
+    }
+    &:last-child {
+        a {
+            &:after {
+                content: '';
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+/* MODIFIERS - Classes to modify this specific's module appearance.
+========================================================================== */
+
+
+/* BREAKPOINTS - Specific layout changes for responsiveness.
+========================================================================== */

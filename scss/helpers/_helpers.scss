@@ -1,3 +1,8 @@
 .--right {
     float: right !important;
 }
+.--hidden-xxxs{
+    @include max-breakpoint(xxxs){
+        display: none;
+    }
+}

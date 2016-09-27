@@ -10,3 +10,18 @@
     }
     > .title_subtitle {}
 }
+
+.--title_subtitle_link{
+    position: relative;
+    font-weight: 300;
+    text-decoration: underline;
+    
+    &:after{
+        content: '▶';
+        display: inline-block;
+        position: relative;
+        left: 65px;
+        bottom: 29px;
+        font-size: 16px;
+    }
+}
