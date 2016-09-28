@@ -1,3 +1,12 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+$title_padding: 40px;
+
+
+/* STYLE - General styling for this module.
+========================================================================== */
+
 .miniSlider {
     width: 100%;
     padding: $section_distance_small 0;
@@ -33,4 +42,14 @@
     &:after {
         clear: both;
     }
+}
+
+.miniSlider_title{
+    padding: $title_padding 0;
+    text-align: center;
+    color: $text_color_dark_secondary;
+    font-family: $georgia_normal;
+    font-style: italic;
+    font-size: $font_size_md;
+    font-weight: $font_light;
 }

@@ -1,6 +1,9 @@
 /* VARIABLES - Variables used in this module.
 ========================================================================== */
 
+$product_image_width: 206px;
+$product_image_height: 254px;
+$mobile_border_distance: 60px;
 
 /* STYLE - General styling for this module.
 ========================================================================== */
@@ -12,19 +15,21 @@
 }
 
 .product_image {
-    width: 206px;
-    height: 254px;
+    width: $product_image_width;
+    height: $product_image_height;
     margin-bottom: 34px;
 }
 
 .product_title {
     text-align: center;
     margin-bottom: 7px;
+    font-weight: $font_bold;
 }
 
 .product_subtitle {
     display: block;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 
@@ -38,5 +43,30 @@
 @include max-breakpoint(md) {
     .product_subtitle {
         margin-bottom: 20px;
+    }
+}
+
+@include max-breakpoint(sm){
+    .product{
+        /* Border */
+        &:after{
+            content: '';
+            display: block;
+            position: relative;
+            height: 1px;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: ($mobile_border_distance - 20px);
+            margin-bottom: $mobile_border_distance;
+            background: $text_color_light_secondary;
+        }
+        
+        &:last-of-type{
+            background: yellow;
+        }
+    }
+    
+        .product_subtitle {
+
     }
 }

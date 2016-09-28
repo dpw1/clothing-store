@@ -8,20 +8,45 @@
     > .title_title {
         text-transform: uppercase;
     }
-    > .title_subtitle {}
+    > .title_subtitleLink {
+        color: $text_color_dark_secondary;
+        font-family: $georgia_normal;
+        font-style: italic;
+        font-size: $font_size_sm;
+        font-weight: $font_light;
+        position: relative;
+        display: block;
+        text-transform: lowercase;
+        width: 120px;
+        &:hover {
+            text-decoration: underline !important;
+        }
+        &:after {
+            position: absolute;
+            content: '▶';
+            font-style: normal;
+            display: inline-block;
+            position: relative;
+            left: 10px;
+            bottom: 0px;
+            font-size: 16px;
+        }
+    }
+    >.title_subtitle {
+        color: $text_color_dark_secondary;
+        font-family: $georgia_normal;
+        font-style: italic;
+        font-size: $font_size_sm;
+        font-weight: $font_light;
+
+    }
 }
 
-.--title_subtitle_link{
+
+/* helper class to the subtitle where it shows a little arrow to the right */
+
+.--title_subtitle_link {
     position: relative;
     font-weight: 300;
     text-decoration: underline;
-    
-    &:after{
-        content: '▶';
-        display: inline-block;
-        position: relative;
-        left: 65px;
-        bottom: 29px;
-        font-size: 16px;
-    }
 }

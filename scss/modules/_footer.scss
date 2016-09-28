@@ -1,75 +1,136 @@
 /* VARIABLES - Variables used in this module.
 ========================================================================== */
 
-
+$footer_title_distance: 10px;
+$footer_item_distance: 5px;
+$footer_margin_bottom: 0;
 
 /* STYLE - General styling for this module.
 ========================================================================== */
 
-.footer{
-    
+.footer {
+    margin-bottom: $footer_margin_bottom;
+    padding: $section_distance_small 0;
 }
 
-.footer_content{
+.footer_content {
     float: left;
     display: inline-block;
+    > li:not(:first-child) {
+        margin-bottom: $footer_item_distance;
+    }
 }
 
-.footer_icon_block{
+.footer_content_title {
+    margin-bottom: $footer_title_distance;
+    font-size: $font_size_xs;
+    font-weight: $font_bold;
+    text-transform: uppercase;
+}
+
+.footer_content_item {
+    color: $text_color_dark;
+    font-size: $font_size_xs;
+}
+
+.footer_icon_block {
     width: 30px;
     height: 30px;
     border: 1px solid #606060;
     display: inline-block;
     margin-right: 14px;
     margin-top: 23px;
-    
-    i{
+    transition: all $transition_speed;
+    i {
+        color: $text_color_dark_secondary;
         margin: 7px 8px;
+    }
+    &:hover {
+        background: $text_color_dark_secondary;
+        i {
+            color: $text_color_light;
+        }
     }
 }
 
+.footer_block {
+    position: relative;
+    &:after {
 
+        right: 0;
+        content: '';
+        position: absolute;
 
+        display: block;
+        width: 2px;
+        height: 159px;
+        background: $line_color;
+    }
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+}
 
-
-
-
+.footer_icon_heart {
+    margin: 0 4px;
+}
 
 
 /* MODIFIERS - Classes to modify this specific's module appearance.
 ========================================================================== */
 
 
-
 /* BREAKPOINTS - Specific layout changes for responsiveness.
 ========================================================================== */
 
 @include max-breakpoint(xs) {
-    .footer_content{
-        &:last-of-type{
-
+    .footer {
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 80%;
+            margin: 0 auto;
+            background: $text_color_light_secondary;
+            margin-bottom: 50px;
         }
-        margin-bottom: 20px;
+        * {
+            text-align: center;
+        }
     }
-    
-    .--footer_last{
-        background: yellow;
+    .footer_content {
+        float: none;
+        display: inline;
+        > li:not(:first-child) {
+            margin-bottom: $footer_item_distance;
+        }
     }
-    
-    .footer_icon_block{
-       
-    }
-}
-
-@include max-breakpoint(xxxs) {
-    .footer_content{
+    .footer_content_title {
+        font-size: $font_size_md;
         text-align: center;
-//        width: 214% !important;
-
-//        background: lightblue;
+        width: 100%;
+        text-transform: uppercase;
+        margin-bottom: 10px;
     }
-    
-    .footer_icon_block{
-       
+    .footer_content_item {
+        color: $text_color_dark;
+        font-size: $font_size_xs;
+    }
+    .footer_icon_block {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $text_color_dark_secondary;
+        display: inline-block;
+        margin-right: 7px;
+        margin-top: 23px;
+        &:last-child {
+            margin-right: 0;
+        }
+        i {
+            margin: 7px 8px;
+        }
     }
 }

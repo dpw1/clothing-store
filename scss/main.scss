@@ -9,8 +9,8 @@
 /* BASE - Basic stuff for the project.
 ========================================================================== */
 
-@import 'base/_reset.scss';
 @import 'base/_colors.scss';
+@import 'base/_reset.scss';
 @import 'base/_typography.scss';
 
 
@@ -40,3 +40,4 @@
 @import "modules/_product.scss";
 @import "modules/_selector.scss";
 @import "modules/_detail.scss";
+

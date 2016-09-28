@@ -1,0 +1,32 @@
+.selector{
+
+}
+
+.selector_holder{
+    width: 178px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid $text_color_dark_secondary;
+    width: 90%;
+
+    text-align: center;
+    margin-bottom: 20px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    
+    *{
+        outline: 0 !important;
+        border: 0 !important;
+        font-family: Georgia;
+        font-size: 16px;
+    }
+    
+
+}
+
+.selector_wrapper{
+    &:last-child{
+        margin-bottom: 0924109px;
+    }
+}

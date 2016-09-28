@@ -3,23 +3,30 @@
 
 $items_distance_horizontal: 15px;
 $items_distance_vertical: 10px;
+$breadcrumb_margin_top: 30px;
+$breadcrumb_margin_bottom: -15px;
+
 /* STYLE - General styling for this module.
 ========================================================================== */
 
-.breadcumb {
+.breadcrumb{
     width: 100%;
+    margin-top: $breadcrumb_margin_top;
+    margin-bottom: $breadcrumb_margin_bottom;
 }
 
 .breadcrumb_item {
     display: inline-block;
     text-align: left;
     margin-bottom: $items_distance_vertical;
+    
     a {
         &:after {
             display: inline-block;
             margin: 0 $items_distance_horizontal;
             content: '/';
         }
+        color: $text_color_dark;
     }
     &:last-child {
         a {

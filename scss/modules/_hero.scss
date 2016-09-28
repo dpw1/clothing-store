@@ -1,6 +1,18 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+$hero_title_subtitle_distance: 10px;
+$transparency_level: .62;
+
+/* STYLE - General styling for this module.
+========================================================================== */
+
 .hero {
     height: 100%;
-    background: yellow;
+    background: linear-gradient( rgba(20, 20, 20, $transparency_level), rgba(20, 20, 20, $transparency_level)), url(/images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     position: relative;
     z-index: 1;
 }
@@ -22,18 +34,23 @@
     text-align: center;
     width: 90%;
     margin: 0 auto;
+    color: $text_color_light;
 }
-.hero_title{
+
+.hero_title {
     text-transform: uppercase;
     font-size: $font_size_xlg;
-    color: $text_color_light;
+    
     font-weight: $font_normal;
+    letter-spacing: 1px;
+    line-height: 110%;
+    margin-bottom: $hero_title_subtitle_distance;
 }
 
 .hero_subtitle {
     text-align: center;
     font-size: $font_size_md;
-    color: $text_color_dark;
+
     font-weight: $font_normal;
     font-style: italic;
     margin-bottom: 20px;
@@ -89,10 +106,11 @@
         width: 15px;
         height: 15px;
         margin: 0 auto;
-        margin-right: 10px;
+        margin-right: 20px;
         color: transparent;
         border: 1px solid #fff;
         transition: background 0.5s ease;
+        padding: 10px;
         &:hover {
             background: #fff;
             color: transparent !important;
@@ -100,10 +118,7 @@
         &:last-child {
             margin-right: 0;
         }
-
     }
-    
-    a{
-
-    }
+    a {}
 }
+

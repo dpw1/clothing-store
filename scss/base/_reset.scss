@@ -8,8 +8,8 @@
 a{
     text-decoration: none;
     &:hover{
-        color: inherit !important;
-        text-decoration: none !important;
+        color: $text_color_dark !important;
+//        text-decoration: none !important;
     }
 }
 
@@ -26,3 +26,4 @@ input[type="submit"]{
     background: none;
     
 }
+
