@@ -19,7 +19,9 @@ $breadcrumb_margin_bottom: -15px;
     display: inline-block;
     text-align: left;
     margin-bottom: $items_distance_vertical;
-    
+    color: $text_color_dark_secondary;
+    text-transform: uppercase;
+    font-size: $font_size_xxs;
     a {
         &:after {
             display: inline-block;

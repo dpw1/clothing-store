@@ -1,0 +1,38 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+$paginator_box_size: 24px;
+$paginator_box_border: 1px solid $text_color_dark;
+
+/* STYLE - General styling for this module.
+========================================================================== */
+
+.paginator {
+    position: relative;
+}
+
+.paginator_wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.paginator_block {
+    display: inline-block;
+    text-align: center;
+    margin-right: 2px;
+    color: $text_color_dark;
+    width: $paginator_box_size;
+    height: $paginator_box_size;
+    border: $paginator_box_border;
+    background: $text_color_light;
+    transition: all $transition_speed;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        background: $text_color_dark_secondary;
+        color: $text_color_light !important;
+        text-decoration: none;
+    }
+}

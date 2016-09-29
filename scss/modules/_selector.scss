@@ -1,14 +1,22 @@
-.selector{
+/* VARIABLES - Variables used in this module.
+========================================================================== */
 
+$selector_margin_bottom: 60px;
+
+/* STYLE - General styling for this module.
+========================================================================== */
+
+.selector{
+    margin-bottom: $selector_margin_bottom;
 }
 
 .selector_holder{
+    cursor: pointer;
     width: 178px;
     height: 30px;
     border: none;
     border-bottom: 2px solid $text_color_dark_secondary;
     width: 90%;
-
     text-align: center;
     margin-bottom: 20px;
     left: 50%;
@@ -27,6 +35,23 @@
 
 .selector_wrapper{
     &:last-child{
-        margin-bottom: 0924109px;
+
+    }
+}
+
+/* BREAKPOINTS - Specific layout changes for responsiveness.
+========================================================================== */
+
+@include breakpoint(xs) {
+   .selector_holder{
+        
+        max-width: 280px;
+    }
+}
+
+@include breakpoint(xxs) {
+   .selector_holder{
+    
+        max-width: 250px;
     }
 }
