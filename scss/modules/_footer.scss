@@ -112,6 +112,7 @@ $footer_margin_bottom: 0;
         > li:not(:first-child) {
             margin-bottom: $footer_item_distance;
         }
+
     }
     .footer_content_title {
         font-size: $font_size_md;
@@ -123,6 +124,8 @@ $footer_margin_bottom: 0;
     .footer_content_item {
         color: $text_color_dark;
         font-size: $font_size_xxs;
+        
+
     }
     .footer_icon_block {
         width: 30px;

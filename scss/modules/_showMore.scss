@@ -1,0 +1,15 @@
+/* STYLE - General styling for this module.
+========================================================================== */
+.showMore_wrapper{
+    width: 100%;
+    height: 44px;
+    background: $text_color_light_secondary;
+    >.showMore_title{
+        color: $text_color_dark_secondary;
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+        height: 100%;
+        line-height: 44px;
+    }
+}

@@ -3,12 +3,21 @@ $black: #303030;
 $gray: #606060;
 $light_gray: #eaeaea;
 $dark_gray: #a3a3a3;
+$orange: #f68236;
+$dark_orange: #eb7f38;
+$extra_light_gray: #f9f9f9;
 
 $text_color_dark_secondary: $gray;
 $text_color_dark: $black;
 $text_color_dark_extra: $dark_gray;
 $text_color_light: $white;
 $text_color_light_secondary: $light_gray;
+$text_color_light_extra: $extra_light_gray;
+$text_color_special: $orange;
 
 $line_color: $light_gray;
+
+
+$btn_special: $orange;
+$btn_special_hover: $dark_orange;
     

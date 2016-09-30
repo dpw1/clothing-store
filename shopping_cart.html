@@ -53,72 +53,81 @@
 
 <body class="single">
 
-    <!-- START BREADCRUMB -->
-    <nav class="breadcrumb">
-        <div class="container">
-            <ul>
-                <li class="breadcrumb_item"><a href="#">Home</a></li>
-                <li class="breadcrumb_item"><a href="#">Men</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- END BREADCRUMB -->
-
-    <!-- START DETAIL -->
-    <section class="detail">
-        <div class="container">
-            <div class="detail_image_wrapper">
-                <img src="" alt="" class="detail_image_large">
-                <a class="detail_image_thumbnail" href="#"><img src="images/logo-lg.png" alt="" ></a>
-                <a class="detail_image_thumbnail" href="#"><img src="" alt="" ></a>
-                <a class="detail_image_thumbnail" href="#"><img src="" alt="" ></a>
-
-            </div>
-            <div class="detail_content">
-                <h1 class="detail_title">FLORAL PLIMSOLL</h1>
-                <h2 class="detail_subtitle">Article number: 14210160762</h2>
-                <span class="detail_price">&#8364; 99,95</span>
-                <p class="detail_info">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-            </div>
-            <div class="detail_size">
-                <p class="detail_size_label">Size</p>
-                <div class="detail_size_blockWrapper">
-                    <a href="#" class="detail_size_block">41</a>
-                    <a href="#" class="detail_size_block">42</a>
-                    <a href="#" class="detail_size_block">43</a>
-                    <a href="#" class="detail_size_block">44</a>
-                    <a href="#" class="detail_size_block">45</a>
-                </div>
-            </div>
-            <a href="#" class="detail_btn btn-special">Add to cart</a>
-        </div>
+    <!-- START TITLE -->
+    <section class="title">
+        <h1 class="title_title">Your Shopping Bag</h1>
+        <h2 class="title_subtitle">Items reserved for limited time only</h2>
     </section>
-    <!-- END DETAIL -->
+    <!-- END TITLE -->
 
-    <!-- START MINISLIDER -->
-    <section class="miniSlider">
-        <div class="container">
-            <h1 class="miniSlider_title">Check our lookbook</h1>
-            <div class="miniSlider_content">
-                <div></div>
-                <div></div>
-                <div></div>
-                <a href="" class="miniSlider_left"><i class="fa fa-chevron-left "></i></a>
-                <a href="" class="miniSlider_right"><i class="fa fa-chevron-right "></i></a>
-            </div>
-        </div>
-    </section>
-    <!-- END MINISLIDER -->
+    <!-- START TABLE -->
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>Product</th>
+                <th data-th="Details"><span>Description</span></th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>Qty</th>
+                <th>Amount</th>
+                <th>Delete</th>
+            </tr>
 
-    <!-- START SHOWMORE -->
-    <section class="showMore">
-        <div class="container">
-            <div class="showMore_wrapper">
-                <a class="showMore_title" href="#">show me more related clothes</a>
-            </div>
+            <tr>
+                <td><img class="table_image" src="http://lorempixel.com/output/animals-h-c-164-187-10.jpg" alt="" /></td>
+                <td>
+                    <p class="table_title"><b>Floral Something</b></p>
+                    <span class="table_subtitle">hello</span></td>
+                <td>Foo</td>
+                <td>39</td>
+                <td>
+                    <div class="table_qty">
+                        <p class="table_qty_title">1</p>
+                        <a href="#" class="table_qty_btn">+</a>
+                        <a href="#" class="table_qty_btn">-</a>
+                    </div>
+                </td>
+                <td>€ 199,00</td>
+                <td><a class="table_delete" href="#"><i class="fa fa-close"></i></a></td>
+            </tr>
+
+            <tr>
+                <td><img class="table_image" src="http://lorempixel.com/output/animals-h-c-164-187-10.jpg" alt="" /></td>
+                <td>
+                    <p class="table_title"><b>Floral Something</b></p>
+                    <span class="table_subtitle">hello</span></td>
+                <td>Foo</td>
+                <td>39</td>
+                <td>
+                    <div class="table_qty">
+                        <p class="table_qty_title">1</p>
+                        <a href="#" class="table_qty_btn">+</a>
+                        <a href="#" class="table_qty_btn">-</a>
+                    </div>
+                </td>
+                <td>€ 199,00</td>
+                <td><a class="table_delete" href="#"><i class="fa fa-close"></i></a></td>
+            </tr>
+
+            <tr class="table_finalPrice">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Subtotal</td>
+                <td>$19,00</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div class="table_finalPrice_mobile">
+            <p>Subtotal:</p>
+            <span>$19,00</span>
         </div>
-    </section>
-    <!-- END SHOWMORE -->
+
+    </div>
+    <!-- START TABLE -->
+
 
     <!-- START FOOTER -->
     <!--     footer.footer>(ul.footer_content>li>a[href="#"]{Lorem$}*4)*4-->

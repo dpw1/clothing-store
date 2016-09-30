@@ -4,16 +4,27 @@
     line-height: 60px;
     width: 150px;
     text-align: center;
+    color: $text_color_light;
+    &:hover{
+        text-decoration: none;
+        color: $text_color_light !important;
+    }
 }
 
 .btn-standard {
-    @extend btn;
+    @extend .btn;
     background: lightgray;
-    color: yellow;
 }
+
 .btn-special{
-    @extend btn;
-    background: orange;
+    @extend .btn;
+    background: $orange;
+    transition: all $transition_speed;
+    text-transform: uppercase;
+    font-weight: $font_light;
+    &:hover{
+        background: $dark_orange;
+    }
 }
 
 .btn_slider_left,
