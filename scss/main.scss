@@ -1,12 +1,12 @@
 /* HELPERS - Mixins, variables, classes and anything else to help.
 ========================================================================== */
 
-@import 'helpers/_variables.scss';
 @import 'helpers/_mixins.scss';
+@import 'helpers/_variables.scss';
 @import 'helpers/_helpers.scss';
 
 
-/* BASE - Basic stuff for the project.
+/* BASE - Base stuff for the project.
 ========================================================================== */
 
 @import 'base/_colors.scss';
@@ -43,3 +43,10 @@
 @import "modules/_paginator.scss";
 @import "modules/_showMore.scss";
 @import "modules/_table.scss";
+@import "modules/_form.scss";
+@import "modules/_payment.scss";
+@import "modules/_separator.scss";
+@import "modules/_shippingAddress.scss";
+@import "modules/_paymentOptions.scss";
+
+

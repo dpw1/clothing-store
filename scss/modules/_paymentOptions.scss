@@ -1,0 +1,12 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+$background_color: $super_light_gray;
+$background_border: $text_color_dark_extra;
+
+.paymentOptions_wrapper{
+    background: $background_color;
+    border-radius: 5px;
+    border: 1px solid $background_border;
+    margin-bottom: $section_distance;
+}

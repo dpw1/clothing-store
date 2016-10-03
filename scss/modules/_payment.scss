@@ -1,0 +1,36 @@
+.payment {
+    display: block;
+    margin-bottom: $section_distance;
+    background: yellow;
+}
+
+.payment_values {
+    background: lightblue;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 90px;
+    *{
+        font-family: Georgia;
+        font-size: $font_size_sm;
+        color: $text_color_dark_secondary;
+    }
+    p{
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        text-align: center;
+        >span{
+            float: right;
+            font-style: italic;
+        }
+        
+        &:last-of-type{
+            color: $text_color_special;
+            *{
+                color: $text_color_special;
+            }  
+        }
+    }
+}

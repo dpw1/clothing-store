@@ -115,7 +115,7 @@
                 <td></td>
                 <td></td>
                 <td>Subtotal</td>
-                <td>$19,00</td>
+                <td class="table_finalPrice_price">$19,00</td>
                 <td></td>
             </tr>
         </table>
@@ -126,8 +126,147 @@
         </div>
 
     </div>
-    <!-- START TABLE -->
+    <!-- END TABLE -->
 
+
+    <!-- START SEPARATOR -->
+    <section class="separator">
+        <div class="container">
+            <div class="separator_block"></div>
+            <div class="separator_block"></div>
+            <div class="separator_block"></div>
+        </div>
+    </section>
+    <!-- END SEPARATOR -->
+
+    <!-- START SHIPPING ADDRESS -->
+    <div class="shippingAddress">
+        <div class="container">
+            <div class="shippingAddress_wrapper">
+                <!-- START TITLE -->
+                <section class="title">
+                    <h1 class="title_title">Shipping Address</h1>
+                    <h2 class="title_subtitle">All fields are required</h2>
+                </section>
+                <!-- END TITLE -->
+
+                <!-- START FORM -->
+                <form action="" class="form">
+                    <div class="container">
+                        <div class="form_wrapper">
+                            <label class="form_label" for="delivery-method">Select delivery method</label>
+                            <select class="form_input" value="delivery-method">
+                                <option value="">DHL International - &#8364;15,00</option>
+                                <option value="">DHL International - &#8364;15,00</option>
+                                <option value="">DHL International - &#8364;15,00</option>
+                                <option value="">DHL International - &#8364;15,00</option>
+                            </select>
+
+                            <div class="form_col2">
+                                <div class="form_col2_block">
+                                    <label class="form_label" for="first-name">First name</label>
+                                    <input class="form_input" type="text" name="first-name">
+                                </div>
+
+                                <div class="form_col2_block">
+                                    <label class="form_label" for="last-name">Last name</label>
+                                    <input class="form_input" type="text" name="last-name">
+                                </div>
+                            </div>
+
+                            <label class="form_label" for="address1">Address (line 1)</label>
+                            <input class="form_input" type="text" name="address1">
+
+                            <label class="form_label" for="address2">Address (line 2)</label>
+                            <input class="form_input" type="text" name="address2">
+
+                            <div class="form_col2">
+                                <div class="form_col2_block">
+                                    <label class="form_label" for="city">City</label>
+                                    <input class="form_input" type="text" name="city">
+                                </div>
+
+                                <div class="form_col2_block">
+                                    <label class="form_label" for="postal-code">Postal code</label>
+                                    <input class="form_input" type="text" name="postal-code">
+                                </div>
+                            </div>
+
+                            <div class="form_col2">
+                                <div class="form_col2_block">
+                                    <label class="form_label" for="phone">Phone number</label>
+                                    <input class="form_input" type="text" name="phone">
+                                </div>
+
+                                <div class="form_col2_block">
+                                    <label class="form_label" for="email">E-mail</label>
+                                    <input class="form_input" type="email" name="email">
+                                </div>
+                            </div>
+
+                            <div class="form_mailbox">
+                                <input type="checkbox" value="mailbox">
+                                <label class="form_label" for="mailbox">Use this address for billing</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM -->
+            </div>
+        </div>
+    </div>
+    <!-- END SHIPPING ADDRESS -->
+
+    <!-- START SEPARATOR -->
+    <section class="separator">
+        <div class="container">
+            <div class="separator_block"></div>
+            <div class="separator_block"></div>
+            <div class="separator_block"></div>
+        </div>
+    </section>
+    <!-- END SEPARATOR -->
+
+    <!-- START PAYMENT OPTIONS -->
+    <div class="paymentOptions">
+        <div class="container">
+            <div class="paymentOptions_wrapper">
+                <!-- START TITLE -->
+                <section class="title">
+                    <h1 class="title_title">Payment Options</h1>
+                    <h2 class="title_subtitle">All fields are required</h2>
+                </section>
+                <!-- END TITLE -->
+
+                <!-- START PAYMENT -->
+                <secton class="payment">
+                    <div class="container">
+                        <div class="payment_values">
+                            <p class="payment_subtotal">Subtotal: <span>&#8364;567,95</span></p>
+                            <p class="payment_shipping">Shipping: <span>&#8364;567,95</span></p>
+                            <p class="payment_total">Total: <span>&#8364;567,95</span></p>
+                        </div>
+
+                        <form action="#" class="form">
+                            <div class="form_wrapper">
+                                <label class="form_label" for="payment-method">Select delivery method</label>
+                                <select class="form_input" name="payment-method">
+                                    <option value="">Credit Card</option>
+                                    <option value="">Debit Card</option>
+                                    <option value="">Paypal</option>
+                                    <option value="">DHL International - &#8364;15,00</option>
+                                </select>
+                            </div>
+
+                            <input class="form_submit btn-special" type="submit" class="btn-special" value="Order now">
+                        </form>
+                    </div>
+                </secton>
+                <!-- END PAYMENT -->
+            </div>
+        </div>
+    </div>
+    <!-- END PAYMENT OPTIONS -->
 
     <!-- START FOOTER -->
     <!--     footer.footer>(ul.footer_content>li>a[href="#"]{Lorem$}*4)*4-->

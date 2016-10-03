@@ -1,0 +1,28 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+$width: 30px;
+$height: 30px;
+$boldness: 7px; 
+$color: $orange;
+$distance: 1px;
+
+
+/* STYLE - General styling for this module.
+========================================================================== */
+
+.separator{
+    margin: $section_distance 0;
+    text-align: center;
+}
+.separator_block{
+
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background: transparent;
+  border: $boldness solid $color;
+  border-left-style: none;
+  border-top-style: none;
+  transform: rotate(45deg);
+  margin-right: $distance;
+}

@@ -18,12 +18,12 @@
 
 .btn-special{
     @extend .btn;
-    background: $orange;
+    background: $orange !important;
     transition: all $transition_speed;
     text-transform: uppercase;
     font-weight: $font_light;
     &:hover{
-        background: $dark_orange;
+        background: $dark_orange !important;
     }
 }
 

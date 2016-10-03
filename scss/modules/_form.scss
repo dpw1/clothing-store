@@ -1,0 +1,88 @@
+/* VARIABLES - Variables used in this module.
+========================================================================== */
+
+$input_height: 40px;
+$form_label_mb: 10px;
+$form_input_mb: 40px;
+$input_padding_left: 14px;
+
+/* STYLE - General styling for this module.
+========================================================================== */
+
+.form {}
+
+.form_wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.form_label {
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    margin-bottom: $form_label_mb;
+}
+
+.form_label {
+    font-size: $font_size_xxs;
+    color: $text_color_dark_secondary;
+}
+
+.form_input {
+    height: $input_height;
+    width: 100%;
+    padding-left: $input_padding_left;
+    margin-bottom: $form_input_mb;
+}
+
+.form_col2 {
+    .form_col2_block {
+        float: left;
+        width: 48%;
+        &:first-child {
+            margin-right: 4%;
+        }
+    }
+}
+
+.form_mailbox {
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 60px;
+    > input {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        zoom: 1.8;
+        left: 0px;
+        width: 10px;
+        margin: 0 auto;
+        background: none !important;
+    }
+    > .form_label {
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+        text-transform: none;
+    }
+}
+
+.form_submit{
+    margin: 0 auto;
+    height: 51px;
+    line-height: 51px;
+}
+
+/* BREAKPOINTS - Specific layout changes for responsiveness.
+========================================================================== */
+
+@include max-breakpoint(xxxs) {
+
+    .form_col2 {
+        .form_col2_block {
+            float: none;
+            width: 100%;
+        }
+    }
+}    
